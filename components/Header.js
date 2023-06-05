@@ -8,6 +8,7 @@ const StyledHeader = styled.header`
 const Logo = styled(Link)`
     color:#fff;
     text-decoration: none;
+    font-size: 20px;
 `;
 const Wrapper = styled.div`
     display: flex;

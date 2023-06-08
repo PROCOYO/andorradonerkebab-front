@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { styled } from "styled-components";
+import styled from 'styled-components';
 import Center from "./Center";
 
 const StyledHeader = styled.header`
@@ -8,7 +8,8 @@ const StyledHeader = styled.header`
 const Logo = styled(Link)`
     color:#fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
+    margin-left: 100px
 `;
 const Wrapper = styled.div`
     display: flex;
@@ -18,6 +19,9 @@ const Wrapper = styled.div`
 const StyledNav = styled.nav`
     display: flex;
     gap: 15px;
+    margin-right: 100px
+    font-size:20px
+    padding-top: 5px;
 `;
 const NavLink = styled(Link)`
     color:#fff;
@@ -27,7 +31,6 @@ const NavLink = styled(Link)`
 export default function Header() {
     return(
         <StyledHeader>
-            <Center>
                 <Wrapper>
                 <Logo href={'/'}>ANDORRA DONER KEBAB</Logo>
                 <StyledNav>
@@ -38,7 +41,6 @@ export default function Header() {
                 </StyledNav>
                 </Wrapper>  
 
-            </Center>
 
         </StyledHeader>
     );

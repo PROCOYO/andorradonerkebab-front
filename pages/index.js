@@ -1,10 +1,11 @@
 import OurRestaurant from "@/components/OurRestaurant";
 import Header from "@/components/Header";
-import { styled } from "styled-components";
+import styled from 'styled-components';
+import Footer from "@/components/Footer";
 
 const Bg = styled.div`
   background-color: #3F3F3F;
-  height: 1000px
+  height: 1450px
 `;
 
 export default function HomePage() {
@@ -12,6 +13,7 @@ export default function HomePage() {
     <Bg>
       <Header />
       <OurRestaurant />
+      <Footer />
     </Bg>
   );
 }
